@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -20,15 +19,20 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # PyCharm
 .idea/
+*.iml
+*.iws
+.idea_modules/
 
 # VS Code
 .vscode/
+*.code-workspace
 
 # Model checkpoints and large files
 checkpoints/
@@ -36,10 +40,37 @@ checkpoints/
 *.pth
 *.h5
 *.hdf5
+*.bin
+*.pt
 
 # Weights & Biases
 wandb/
+runs/
+artifacts/
 
 # Logs
 *.log
-logs/ 
+logs/
+tensorboard/
+
+# Data
+data/
+datasets/
+*.npy
+*.npz
+*.csv
+*.json
+*.jsonl
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# System
+.DS_Store
+Thumbs.db 
